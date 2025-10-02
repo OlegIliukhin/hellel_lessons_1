@@ -1,2 +1,1 @@
-print("Hello Alexey")
-print("Я Олег")
+print("hello Alexey")
