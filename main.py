@@ -1,10 +1,8 @@
 print("hello Alexey")
 
-x = 1
+x = 0.3
 print(id(x))
-x = 2
-print(id(x))
-
+print(0.1 + 0.1 + 0.1)
 print(type(x))
 
 
