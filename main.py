@@ -5,6 +5,9 @@ print(id(x))
 x = 2
 print(id(x))
 
+print(type(x))
+
+
 l = [1, 2, 3]
 print(l)
 print(id(l))
