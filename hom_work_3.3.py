@@ -41,6 +41,19 @@ print(split_list([1, 2, 3]))           # [[1, 2], [3]]
 print(split_list([1, 2, 3, 4, 5]))     # [[1, 2, 3], [4, 5]]
 print(split_list([1]))                 # [[1], []]
 print(split_list([]))                  # [[], []]
-
 print(split_list([1, 2, 3, 4, 5, 6,7,8,9,10]))
 
+# ******************
+# вариант в одну строчку кода :-)
+# lambda lst: — создаёт анонимную (однострочную) функцию.
+# if not lst — проверка, пустой ли список.
+# (len(lst)+1)//2 — вычисляем середину (если нечётное количество, первый список длиннее).
+# [lst[:middle], lst[middle:]] — делим список и возвращаем результат
+
+split_list = lambda lst: [[], []] if not lst else [lst[:(len(lst)+1)//2], lst[(len(lst)+1)//2:]]
+print(split_list([1, 2, 3, 4, 5, 6]))
+print(split_list([1, 2, 3]))
+print(split_list([1, 2, 3, 4, 5]))
+print(split_list([1]))
+print(split_list([]))
+print(split_list([1, 2, 3, 4, 5, 6,7,8,9,10]))
