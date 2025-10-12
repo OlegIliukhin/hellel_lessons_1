@@ -1,10 +1,3 @@
-import unittest
-
-
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
-
-
-if __name__ == '__main__':
-    unittest.main()
+# Д.З 4.3
+# Створіть список випадкових чисел від 0 до 100 із випадковою кількістю
+# елементів від 3 до 10 (для цього використовуйте бібліотеку random)
