@@ -36,3 +36,15 @@ print(even_index_sum([0, 1, 7, 2, 4, 8]))   # 88
 print(even_index_sum([1, 3, 5]))            # 30
 print(even_index_sum([6]))                  # 36
 print(even_index_sum([]))                   # 0
+
+#  в одну строчку lambda
+# if not lst — проверяет, пуст ли список.
+# sum(lst[::2]) — сумма элементов с чётными индексами.
+# lst[-1] — последний элемент.
+# Всё в одной строке через тернарный оператор.
+
+even_index_sum = lambda lst: 0 if not lst else sum(lst[::2]) * lst[-1]
+print(even_index_sum([0, 1, 7, 2, 4, 8]))
+print(even_index_sum([1, 3, 5]))
+print(even_index_sum([6]))
+print(even_index_sum([]))
