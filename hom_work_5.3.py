@@ -16,12 +16,25 @@
 # [:140] — обрезает до 140 символов.
 
 import string
-# 1)
+# 1) #PythonCommunity
 text = "Python Community"
-hashtag = '#' + ''.join(word.capitalize() for word in text.split())
+hashtag = "#" + "".join(word.capitalize() for word in text.split())
 # до 140 символов
 hashtag = hashtag[:140]
 print(hashtag)
 
-# 2)
+# 2) #ILikePythonCommunity
 text = "i like python community!"
+hashtag = "#" + "".join(word.capitalize() for word in text.split())
+#  "#" не трогаем
+hashtag = "#" + "".join(c for c in hashtag[1:] if c not in string.punctuation)
+hashtag = hashtag[:140]
+print(hashtag)
+
+# 3) #ShouldISubscribeYes
+text = "Should, I. subscribe? Yes!"
+hashtag = '#' + ''.join(word.capitalize() for word in text.split())
+hashtag = '#' + ''.join(c for c in hashtag[1:] if c not in string.punctuation)
+hashtag = hashtag[:140]
+
+print(hashtag)
