@@ -3,35 +3,35 @@
  # - якщо користувач ввів yes (можна просто y), то нове обчислення, інакше - закінчення роботи.
 
 import math
-num1 = float(input("введите цифру"))
-operation = input("выбрать дейсвие (+, -, *, /): ")
-num2 = float(input("ввести цифру"))
+import math
 
-if operation == "+":
-     result = num1 + num2
-     print(result)
-elif operation == "-":
-     result = num1 - num2
-     print(result)
+while True:
+    num1 = float(input("введите цифру:"))
+    operation = input("выбрать действие (+, -, *, /): ")
+    num2 = float(input("ввести цифру:"))
 
-elif operation == "*":
-     result = num1 * num2
-     print(result)
+    if operation == "+":
+        result = num1 + num2
+        print(result)
 
-elif operation == "/":
-     if num2 == 0:
-         print("делить на 0 нельзя!")
-     else:
-         result = num1 / num2
-         print(result)
-else:
-    print("выбрать дейсвие (+, -, *, /)" )
+    elif operation == "-":
+        result = num1 - num2
+        print(result)
 
-     again = input("Хотите продолжить? (y/n): ")
-     if again.lower() != "y":
-         num1 = while True:
-             num1 = float(input("введите цифру"))
-         else:
-    break:
+    elif operation == "*":
+        result = num1 * num2
+        print(result)
 
+    elif operation == "/":
+        if num2 == 0:
+            print("делить на 0 нельзя!")
+        else:
+            result = num1 / num2
+            print(result)
 
+    else:
+        print("выбрать действие (+, -, *, /)")
+
+    again = input("Хотите продолжить? (y/n): ")
+    if again.lower() != "y":
+        break
