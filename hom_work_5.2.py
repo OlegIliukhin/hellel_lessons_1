@@ -34,4 +34,5 @@ while True:
 
     again = input("Хотите продолжить? (y/n): ")
     if again.lower() != "y":
-        break
+       print("дякую, работа завершена")
+    break
