@@ -3,7 +3,6 @@
  # - якщо користувач ввів yes (можна просто y), то нове обчислення, інакше - закінчення роботи.
 
 import math
-import math
 
 while True:
     num1 = float(input("введите цифру:"))
@@ -12,22 +11,22 @@ while True:
 
     if operation == "+":
         result = num1 + num2
-        print(result)
+        print("=", result)
 
     elif operation == "-":
         result = num1 - num2
-        print(result)
+        print("=",result)
 
     elif operation == "*":
         result = num1 * num2
-        print(result)
+        print("=", result)
 
     elif operation == "/":
         if num2 == 0:
             print("делить на 0 нельзя!")
         else:
             result = num1 / num2
-            print(result)
+            print("=", result)
 
     else:
         print("выбрать действие (+, -, *, /)")
