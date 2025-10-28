@@ -38,3 +38,19 @@ hashtag = '#' + ''.join(c for c in hashtag[1:] if c not in string.punctuation)
 hashtag = hashtag[:140]
 
 print(hashtag)
+
+
+# ***********
+
+def make_hashtag():
+    text = input("Введіть рядок: ")
+    # убераем все знаки
+    for s in string.punctuation:
+        text = text.replace(s, "")
+    # делаем с большой буквы
+    words = text.split()
+    hashtag = "#" + "".join(word.capitalize() for word in words)
+    # обризаем
+    return hashtag[:140]
+
+print(make_hashtag())
