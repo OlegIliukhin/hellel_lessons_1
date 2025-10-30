@@ -17,7 +17,9 @@
 # Возвращаем словарь с результатом.
 
 # Приклад:
-def popular_words(text, words):
+from typing import List, Dict
+
+def popular_words(text: str, words: List[str]) -> Dict[str, int]:
     # делаем текст маленькими буквами и разбиваем на слова
     text = text.lower().split()
     # создаём пустой словарь для результата
